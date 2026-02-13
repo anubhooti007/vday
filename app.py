@@ -4,7 +4,7 @@ import os
 
 # Page config
 st.set_page_config(
-    page_title="Sooo, Will you be my Valentine!?",
+    page_title="Will you be my Valentine!?",
     page_icon="❤️",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -312,7 +312,7 @@ def render_reason(page_num: int, heading: str, gif_name: str, next_page: int):
 def render_proposal():
     st.markdown('<div class="page-container">', unsafe_allow_html=True)
     st.markdown(
-        '<p class="proposal-text">Will you be my Valentine?</p>',
+        '<p class="proposal-text">Soo....Will you be my Valentine?</p>',
         unsafe_allow_html=True
     )
     st.markdown('<div class="btn-spacer"></div>', unsafe_allow_html=True)
@@ -411,7 +411,7 @@ elif page == 2:
 elif page == 3:
     render_reason(
         3,
-        "Reason 2<br>Broke......so can't run far 😌",
+        "Reason 2<br>Broke......so can't run far from you😌",
         "reason2.gif",
         4
     )
@@ -425,7 +425,7 @@ elif page == 4:
 elif page == 5:
     render_reason(
         5,
-        "Reason 4<br>Useful. Can do chores like acche ghar ki bahu. Will keep you hydrated 💧",
+        "Reason 4<br>Useful. Can do chores like acche ghar ki bahu. Will also keep you hydrated 💧",
         "reason4.gif",
         6
     )
