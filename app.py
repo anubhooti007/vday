@@ -4,7 +4,7 @@ import os
 
 # Page config
 st.set_page_config(
-    page_title="So, Will you be my Valentine?",
+    page_title="Sooo, Will you be my Valentine!?",
     page_icon="❤️",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -69,6 +69,7 @@ st.markdown("""
         margin: 0 auto;
         position: relative;
         z-index: 1;
+        text-align: justify !important;
     }
     
     [data-testid="stAppViewContainer"] { padding-top: 0 !important; }
@@ -82,7 +83,7 @@ st.markdown("""
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: justify;
         animation: pageFadeIn 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     }
     
@@ -101,6 +102,7 @@ st.markdown("""
         letter-spacing: 0.02em !important;
         text-shadow: 0 2px 20px rgba(219, 112, 147, 0.15) !important;
         animation: textFadeIn 0.8s ease-out 0.2s both !important;
+        text-align: justify !important;
     }
     
     .reason-heading {
@@ -113,6 +115,7 @@ st.markdown("""
         letter-spacing: 0.015em !important;
         text-shadow: 0 2px 15px rgba(219, 112, 147, 0.12) !important;
         animation: textFadeIn 0.8s ease-out 0.2s both !important;
+        text-align: justify !important;
     }
     
     @keyframes textFadeIn {
@@ -158,6 +161,7 @@ st.markdown("""
         letter-spacing: 0.02em !important;
         text-shadow: 0 2px 25px rgba(219, 112, 147, 0.2) !important;
         animation: textFadeIn 0.8s ease-out 0.2s both !important;
+        text-align: justify !important;
     }
     
     .gif-spacer { margin: 1.25rem 0 !important; }
@@ -190,9 +194,12 @@ st.markdown("""
         color: #7d3c5c !important;
         line-height: 1.8 !important;
         margin: 1.25rem auto 0 !important;
-        max-width: 480px !important;
+        max-width: 520px !important;
+        width: 100% !important;
         text-shadow: 0 0 30px rgba(255, 182, 193, 0.6) !important;
         animation: successBounce 1s ease-out 0.3s both !important;
+        text-align: justify !important;
+        text-align-last: left !important;
     }
     
     @keyframes successBounce {
@@ -235,8 +242,8 @@ st.markdown("""
     }
     
     [data-testid="column"] { padding: 0 0.5rem !important; }
-    .stMarkdown { padding: 0 !important; }
-    [data-testid="stMarkdownContainer"] { padding: 0 !important; }
+    .stMarkdown { padding: 0 !important; text-align: justify !important; }
+    [data-testid="stMarkdownContainer"] { padding: 0 !important; text-align: justify !important; }
     [data-testid="stHorizontalBlock"] > div { gap: 0.5rem !important; }
     [data-testid="stImage"] { margin: 0 auto !important; }
     .stImage img { margin: 0 auto !important; }
@@ -379,7 +386,7 @@ def render_success():
         st.caption("Place success.gif in the same folder as app.py")
     
     st.markdown("""
-    <p class="success-text">
+    <p class="success-text" style="text-align: justify !important;">
         I mean......whatever... god you are so clingy. {pretending to be macho}<br>
         But real stuff, so happy to have you in my life.<br>
         Happy Valentine's baby <span class="sparkle">😌</span><span class="sparkle">❤️</span>
@@ -418,7 +425,7 @@ elif page == 4:
 elif page == 5:
     render_reason(
         5,
-        "Reason 4<br>Extremely useful. Can do chores like acche ghar ki bahu. Will keep you hydrated 💧",
+        "Reason 4<br>Useful. Can do chores like acche ghar ki bahu. Will keep you hydrated 💧",
         "reason4.gif",
         6
     )
