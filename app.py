@@ -4,7 +4,7 @@ import os
 
 # Page config
 st.set_page_config(
-    page_title="Will you be my Valentine?",
+    page_title="So, Will you be my Valentine?",
     page_icon="❤️",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -266,7 +266,7 @@ def load_image(path: str):
 def render_intro():
     st.markdown('<div class="page-container">', unsafe_allow_html=True)
     st.markdown(
-        '<p class="main-heading">4 Reasons why you should be my Valentine</p>',
+        '<p class="main-heading">4 Reasons why you should choose me as your Valentine......!</p>',
         unsafe_allow_html=True
     )
     st.markdown('<div class="btn-spacer"></div>', unsafe_allow_html=True)
@@ -380,8 +380,8 @@ def render_success():
     
     st.markdown("""
     <p class="success-text">
-        I mean whatever... god you are so clingy.<br>
-        But real stuff — so happy to have you in my life.<br>
+        I mean......whatever... god you are so clingy. {pretending to be macho}<br>
+        But real stuff, so happy to have you in my life.<br>
         Happy Valentine's baby <span class="sparkle">😌</span><span class="sparkle">❤️</span>
     </p>
     """, unsafe_allow_html=True)
@@ -397,28 +397,28 @@ if page == 1:
 elif page == 2:
     render_reason(
         2,
-        "Reason 1: Big guns coming sooon 💪",
+        "Reason 1<br>Big guns coming sooon 💪",
         "reason1.gif",
         3
     )
 elif page == 3:
     render_reason(
         3,
-        "Reason 2: Broke so can't run far 😌",
+        "Reason 2<br>Broke......so can't run far 😌",
         "reason2.gif",
         4
     )
 elif page == 4:
     render_reason(
         4,
-        "Reason 3: I'll take care of you (Heat radiator mode for winter cuddles 🔥)",
+        "Reason 3<br>Will always take care of you (Eg. Heat radiator to keep you warm during winter cuddles)",
         "reason3.gif",
         5
     )
 elif page == 5:
     render_reason(
         5,
-        "Reason 4: Extremely useful. Can do chores like acche ghar ki bahu. Will keep you hydrated 💧",
+        "Reason 4<br>Extremely useful. Can do chores like acche ghar ki bahu. Will keep you hydrated 💧",
         "reason4.gif",
         6
     )
